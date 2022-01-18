@@ -1,1 +1,52 @@
-/*Add styles here*/
+body{
+    width: 99%;
+    height: auto;
+    background-image: url(../img/field.jpg);
+    background-size: cover;
+}
+
+
+h1{
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.01em;
+    word-spacing: -0.15em;
+    font-size: 60px;
+    margin: 15px 0px 0px 0px;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 1.45em;
+    word-spacing: -0.05em;
+    font-size: 14px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    background: blue;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#containerMain{
+    width: 45%;
+    border: solid 1px;
+    border-radius: 10px;
+    background: white;
+    margin: auto;
+    margin-top: 8%;
+    padding-left: 2%;
+    padding-bottom: 2.5%;
+    padding-top: 1.5%;
+}
+
+#containerMinor{
+    width: 65%;
+}
