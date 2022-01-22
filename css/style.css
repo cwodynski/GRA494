@@ -35,6 +35,34 @@ a:hover{
     padding-right: 2px;
 }
 
+
+li{
+    display: inline;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 1.45em;
+    word-spacing: -0.05em;
+    font-size: 14px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#containerContent{
+    padding-left: 2%;
+    margin: auto;
+}
+
+#navBarLink{
+    display: inline;
+    padding-right: 20px;
+}
+
 #containerMain{
     width: 45%;
     border: solid 1px;
@@ -42,7 +70,7 @@ a:hover{
     background: white;
     margin: auto;
     margin-top: 8%;
-    padding-left: 2%;
+    margin-bottom: 2%;
     padding-bottom: 2.5%;
     padding-top: 1.5%;
 }
@@ -50,3 +78,4 @@ a:hover{
 #containerMinor{
     width: 65%;
 }
+
