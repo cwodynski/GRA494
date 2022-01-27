@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Typography */
+html, .root {
+  font-size: 18px;
+  line-height: 23px;
+}
+body, .article {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.2777778rem;
+  margin: auto;
+}
+h1, .h1 {
+  font-size: 4.2222222rem;
+  line-height: 5.1111111rem;
+  margin-top: 1.2777778rem;
+  margin-bottom: 2.5555556rem;
+}
+h2, .h2 {
+  font-size: 2.6111111rem;
+  line-height: 3.8333333rem;
+  margin-top: 1.2777778rem;
+  margin-bottom: 1.2777778rem;
+}
+h3, .h3 {
+  font-size: 1.6111111rem;
+  line-height: 2.5555556rem;
+  margin-top: 1.2777778rem;
+  margin-bottom: 0rem;
+}
+h4, .h4 {
+  font-size: 1rem;
+  line-height: 1.2777778rem;
+  margin-top: 1.2777778rem;
+  margin-bottom: 0rem;
+}
+h5, .h5 {
+  font-size: 1rem;
+  line-height: 1.2777778rem;
+  margin-top: 1.2777778rem;
+  margin-bottom: 0rem;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.2777778rem;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* Styles Start Here */
+body {
+	width: 100%;
+	height: auto;
+}
+section.main {
+	margin: 5rem;
+}
+h1,p,ol,ul,li,a {
+	font-family: sans-serif;
+}
+code {
+	background-color: black;
+	color:white;
+}
+pre {
+	background-color: black;
+	color:white;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+img{
+    width: 50%;
+    height: auto;
+}
