@@ -1,0 +1,102 @@
+$font-stack: Inter, sans-serif;
+$primary-color: #1f1f1f;
+$background-color:white;
+$background-accent:pink;
+$bold:600;
+$regular:400;
+$light:300;
+$full-width:100%;
+
+body{
+    height: 100vh;
+    width: $full-width;
+    font-family: $font-stack;
+    color: $primary-color;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: $bold;
+}
+
+.componentsHeader{
+    margin: 0;
+}
+
+h2{
+    font-size:2.5em;
+    font-weight: $bold;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: $regular;
+}
+
+
+
+p{
+    font-size: 1.5em;
+    font-weight: $regular;
+}
+
+a{
+    font-weight: $regular;
+    text-decoration: none;
+    color: $primary-color;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.anchor-comp-pg{
+    display: block;
+}
+
+button{
+    font-weight: $regular;
+    background-color: $background-color;
+    border: solid 1px;
+    padding: 0.5em;
+    border-radius: 0.75em;
+}
+
+.cardSection{
+    background-color: $background-accent;
+    height: 87.5%;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 70%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    border-radius: 2.5%;
+    padding: 1em;
+    flex-basis: 20%;
+    min-width: 200px;
+    height: 60%;
+}
+
+.card__bottom{
+    margin-top: auto;
+}
