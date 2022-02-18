@@ -66,24 +66,32 @@ button{
 
 .cardSection{
     background-color: $background-accent;
-    height: 87.5%;
+    height: auto;
+    margin: 0;
 }
 
 .cardHeader{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30%;
+    height: 20em;
 }
 
 .cardContainer{
     display: flex;
+    justify-content: center;
+}
+
+.cardContainer__wrapper{
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-content: stretch;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-    height: 70%;
+    padding-bottom: 12.5em;
+    height: auto;
 }
 
 .card{
@@ -93,8 +101,11 @@ button{
     border-radius: 2.5%;
     padding: 1em;
     flex-basis: 20%;
-    min-width: 200px;
-    height: 60%;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 60%;
+    
+    
 }
 
 .card__bottom{
