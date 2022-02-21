@@ -1,3 +1,8 @@
+/*Mobile font sizes*/
+html {
+  width: 100%;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -57,13 +62,35 @@ button {
 .navContainer {
   display: flex;
   background-color: lightgray;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
+}
+@media screen and (max-width: 500px) {
+  .navContainer {
+    flex-direction: column;
+  }
+}
+
+.navMenu {
+  padding: 0;
+}
+@media screen and (max-width: 500px) {
+  .navMenu {
+    justify-content: flex-end;
+  }
 }
 
 .navItem {
   display: inline;
   padding: 0px 20px 0px 20px;
+}
+@media screen and (max-width: 900px) {
+  .navItem {
+    padding: 0px 0px 0px 5px;
+  }
+  .navItem a {
+    font-size: 1em;
+  }
 }
 
 .fullWidthImage {
@@ -71,12 +98,8 @@ button {
   height: auto;
   margin: 0 auto;
 }
-.fullWidthImage .fullWidthImage--img {
+.fullWidthImage img {
   width: 100%;
-  background-image: url("#");
-  background-size: cover;
-  background-color: lightgray;
-  height: 50em;
 }
 
 .centerBanner {
@@ -86,6 +109,7 @@ button {
   align-content: center;
   height: auto;
   width: 50%;
+  margin: auto;
   border: 1px solid black;
   border-radius: 1em;
   padding: 20px;
@@ -100,24 +124,47 @@ button {
   width: 80%;
   margin: 1em;
 }
+.centerBanner button {
+  width: auto;
+  align-self: center;
+}
 @media screen and (max-width: 1400px) {
   .centerBanner {
-    width: 60%;
+    width: 70%;
+  }
+  .centerBanner h1 {
+    margin-bottom: 0.5em;
+  }
+  .centerBanner p {
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 600px) {
   .centerBanner {
     width: 80%;
   }
+  .centerBanner h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  .centerBanner p {
+    width: auto;
+  }
 }
 
 .twoColumn {
-  border: solid 1px black;
   display: flex;
   padding: 5em 5em 5em 5em;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+}
+@media screen and (max-width: 1230px) {
+  .twoColumn {
+    padding: 2em;
+    flex-direction: column;
+  }
 }
 .twoColumn .leftColumn {
   display: flex;
@@ -126,12 +173,31 @@ button {
 }
 .twoColumn .leftColumn h2 {
   margin: 0;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 1230px) {
+  .twoColumn .leftColumn {
+    width: auto;
+  }
+  .twoColumn .leftColumn h2 {
+    margin-bottom: 0.5em;
+  }
 }
 .twoColumn .rightColumn {
-  padding: 5em;
+  align-self: center;
   width: 40%;
-  height: 20em;
-  background-color: lightgray;
+  height: auto;
+}
+.twoColumn .rightColumn img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1230px) {
+  .twoColumn .rightColumn {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
 }
 
 .cardSection {
@@ -192,6 +258,23 @@ button {
 
 .card__bottom {
   margin-top: auto;
+}
+
+.footer__container {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  padding: 10px;
+}
+.footer__container ul {
+  list-style: none;
+  padding: 0;
+}
+.footer__container ul li {
+  display: inline-block;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
