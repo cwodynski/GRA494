@@ -94,14 +94,30 @@ button:hover{
     @media screen and (max-width: 500px){
         flex-direction: column;
     }
-}
     
-.navMenu{
-    padding: 0;
+    .logoContainer{
+        display: flex;
+        flex: 15%;
+        justify-content: center;
+    }
     
-    @media screen and (max-width: 500px){
+    .midBumper{
+        flex: 0 2 60%;
+    }
+    
+    .navMenu{
+        flex: 25%;
+        padding: 0;
+    
+        @media screen and (max-width: 500px){
         justify-content: flex-end;
     }
+        a{
+            font-size: 1.1em;
+        }
+}
+    
+
     
 }
 
@@ -272,7 +288,7 @@ button:hover{
     gap: 4em;
     padding-bottom: 12.5em;
     height: auto;
-        @media screen and (max-width:1600px){
+        @media screen and (max-width:1685px){
             width: 70%;
         }
 }
@@ -286,7 +302,7 @@ button:hover{
     flex-basis: 15%;
     min-width: 20em;
     min-height: 20em; 
-         @media screen and (max-width:1600px){
+         @media screen and (max-width:1685px){
             flex-basis: 30%;
         }
     
@@ -313,8 +329,7 @@ button:hover{
     }
     
     .logo{
-        justify-content: center;
-        align-content: center;
+
     }
     
     .copyright{

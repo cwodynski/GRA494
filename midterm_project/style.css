@@ -82,14 +82,25 @@ button:hover {
     flex-direction: column;
   }
 }
-
-.navMenu {
+.navContainer .logoContainer {
+  display: flex;
+  flex: 15%;
+  justify-content: center;
+}
+.navContainer .midBumper {
+  flex: 0 2 60%;
+}
+.navContainer .navMenu {
+  flex: 25%;
   padding: 0;
 }
 @media screen and (max-width: 500px) {
-  .navMenu {
+  .navContainer .navMenu {
     justify-content: flex-end;
   }
+}
+.navContainer .navMenu a {
+  font-size: 1.1em;
 }
 
 .navItem {
@@ -248,7 +259,7 @@ button:hover {
   padding-bottom: 12.5em;
   height: auto;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1685px) {
   .cardContainer {
     width: 70%;
   }
@@ -264,7 +275,7 @@ button:hover {
   min-width: 20em;
   min-height: 20em;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1685px) {
   .card {
     flex-basis: 30%;
   }
@@ -287,10 +298,6 @@ button:hover {
   justify-content: center;
   flex: 15%;
   margin: auto;
-}
-.footer__container .logo {
-  justify-content: center;
-  align-content: center;
 }
 .footer__container .copyright {
   margin: auto;
