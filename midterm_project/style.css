@@ -32,8 +32,11 @@ h3 {
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1.1em;
   font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.005em;
 }
 
 a {
@@ -47,6 +50,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.logo {
+  width: 5em;
+}
+
 .anchor-comp-pg {
   display: block;
 }
@@ -57,6 +64,11 @@ button {
   border: solid 1px;
   padding: 0.5em;
   border-radius: 0.75em;
+}
+
+button:hover {
+  background-color: lightgray;
+  cursor: pointer;
 }
 
 .navContainer {
@@ -100,6 +112,8 @@ button {
 }
 .fullWidthImage img {
   width: 100%;
+  height: 40em;
+  object-fit: cover;
 }
 
 .centerBanner {
@@ -268,13 +282,31 @@ button {
   align-content: center;
   padding: 10px;
 }
-.footer__container ul {
+.footer__container .logoContainer {
+  display: flex;
+  justify-content: center;
+  flex: 15%;
+  margin: auto;
+}
+.footer__container .logo {
+  justify-content: center;
+  align-content: center;
+}
+.footer__container .copyright {
+  margin: auto;
+  flex: 70%;
+  text-align: center;
+}
+.footer__container .footer__menu {
   list-style: none;
   padding: 0;
+  flex: 15%;
 }
-.footer__container ul li {
+.footer__container .footer__menu li {
+  margin: 0;
   display: inline-block;
   padding-right: 20px;
+  font-size: 0.75em;
 }
 
 /*# sourceMappingURL=style.css.map */

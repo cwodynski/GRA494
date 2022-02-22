@@ -46,8 +46,11 @@ h3{
 
 
 p{
-    font-size: 1.25em;
+    font-size: 1.1em;
     font-weight: $regular;
+    line-height: 1.4em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.005em;
 }
 
 a{
@@ -61,6 +64,10 @@ a:hover{
     text-decoration: underline;
 }
 
+.logo{
+    width: 5em;
+}
+
 .anchor-comp-pg{
     display: block;
 }
@@ -71,6 +78,11 @@ button{
     border: solid 1px;
     padding: 0.5em;
     border-radius: 0.75em;
+}
+
+button:hover{
+    background-color: lightgray;
+    cursor: pointer;
 }
 
 .navContainer{
@@ -115,6 +127,8 @@ button{
     
     img{
         width: 100%;
+        height: 40em;
+        object-fit: cover;
     }
     
 }
@@ -291,13 +305,34 @@ button{
     align-content: center;
     padding: 10px;
     
-    ul{
+    .logoContainer{
+        display: flex;
+        justify-content: center;
+        flex:15%;
+        margin: auto;
+    }
+    
+    .logo{
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .copyright{
+        margin: auto;
+        flex: 70%;
+        text-align: center;
+    }
+    
+    .footer__menu{
         list-style: none;
         padding: 0;
+        flex:15%;
         
         li{
+            margin: 0;
             display: inline-block;
             padding-right: 20px;
+            font-size: 0.75em; 
         }
         
     }
