@@ -84,19 +84,17 @@ button:hover {
 }
 .navContainer .logoContainer {
   display: flex;
-  flex: 15%;
   justify-content: center;
 }
-.navContainer .midBumper {
-  flex: 0 2 60%;
-}
 .navContainer .navMenu {
-  flex: 25%;
   padding: 0;
 }
 @media screen and (max-width: 500px) {
   .navContainer .navMenu {
     justify-content: flex-end;
+    margin: auto;
+    flex: 0;
+    padding-top: 1em;
   }
 }
 .navContainer .navMenu a {
@@ -109,7 +107,7 @@ button:hover {
 }
 @media screen and (max-width: 900px) {
   .navItem {
-    padding: 0px 0px 0px 5px;
+    padding: 0px 8px 0px 8px;
   }
   .navItem a {
     font-size: 1em;
@@ -314,6 +312,25 @@ button:hover {
   display: inline-block;
   padding-right: 20px;
   font-size: 0.75em;
+}
+@media screen and (max-width: 600px) {
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__container .logo {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .footer__container .copyright {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .footer__container .footer__menu {
+    text-align: center;
+  }
+  .footer__container .footer__menu li {
+    padding: 0 5px 0 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

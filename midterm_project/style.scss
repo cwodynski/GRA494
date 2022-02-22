@@ -97,21 +97,22 @@ button:hover{
     
     .logoContainer{
         display: flex;
-        flex: 15%;
         justify-content: center;
     }
     
     .midBumper{
-        flex: 0 2 60%;
     }
     
     .navMenu{
-        flex: 25%;
         padding: 0;
     
         @media screen and (max-width: 500px){
-        justify-content: flex-end;
-    }
+            justify-content: flex-end;
+            margin: auto;
+            flex: 0;
+            padding-top: 1em;
+        }
+        
         a{
             font-size: 1.1em;
         }
@@ -127,7 +128,7 @@ button:hover{
     
     @media screen and (max-width: 900px){
         
-        padding: 0px 0px 0px 5px; 
+        padding: 0px 8px 0px 8px; 
         
         a{
             font-size:1em;
@@ -350,5 +351,27 @@ button:hover{
             font-size: 0.75em; 
         }
         
+    }
+    
+    @media screen and (max-width: 600px){
+        flex-direction: column;
+        
+        .logo{
+            margin-top: 0.5em; 
+            margin-bottom: 0.5em; 
+        }
+        
+        .copyright{
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        .footer__menu{
+            text-align: center;
+            
+            li{
+            padding: 0 5px 0 5px;
+            }
+        }
     }
 }
