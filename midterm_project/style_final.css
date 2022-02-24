@@ -63,7 +63,7 @@ button {
   background-color: white;
   border: solid 1px;
   padding: 0.5em;
-  border-radius: 0.75em;
+  border-radius: 1em;
 }
 
 button:hover {
@@ -149,14 +149,14 @@ button:hover {
   .textOffset h1 {
     font-size: 2em;
     margin: 0;
-    text-align: center;
+    padding-top: 2%;
   }
   .textOffset img {
     width: 100%;
     position: static;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.5em;
+    margin-top: 2em;
     right: auto;
   }
 }
@@ -165,17 +165,27 @@ img {
   width: 100%;
   height: auto;
 }
-@media screen and (min-width: 1920) {
+@media screen and (min-width: 1920px) {
   img {
     width: auto;
   }
 }
 
-.centerBanner-twoColumn__wrapper {
+.centerBanner__wrapper {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 900px) {
+  .centerBanner__wrapper {
+    transform: translateY(-15%);
+  }
+}
+@media screen and (max-width: 500px) {
+  .centerBanner__wrapper {
+    transform: translateY(-5%);
+  }
 }
 
 .centerBanner {
@@ -184,10 +194,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  flex-basis: 50%;
-  position: absolute;
-  left: 12.5%;
-  top: -25%;
+  width: 75%;
   margin: 0;
   border: 1px solid black;
   border-radius: 1em;
@@ -273,12 +280,11 @@ img {
   .twoColumn .rightColumn {
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: 2em 0 0 0;
   }
 }
-
 .twoColumn--top {
-  padding-top: 15%;
+  padding-top: 0;
 }
 
 .cardSection {
@@ -296,6 +302,11 @@ img {
   justify-content: center;
   align-items: center;
   height: 15em;
+}
+@media screen and (max-width: 600px) {
+  .cardHeader {
+    height: 10em;
+  }
 }
 
 .cardWrapper {
@@ -320,6 +331,11 @@ img {
     width: 70%;
   }
 }
+@media screen and (max-width: 900px) {
+  .cardContainer {
+    padding-bottom: 6em;
+  }
+}
 
 .card {
   display: flex;
@@ -342,7 +358,7 @@ img {
 }
 
 .footer__container {
-  background-color: lightgray;
+  background-color: #c4f28f;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
