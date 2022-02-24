@@ -1,0 +1,463 @@
+$font-stack: Inter, sans-serif;
+$primary-color: #1f1f1f;
+$background-color:white;
+$background-accent:#c4f28f;
+$bold:600;
+$regular:400;
+$light:300;
+$full-width:100%;
+
+/*Mobile font sizes*/
+$h1-mobile: 2em;
+$h2-mobile:1.25em;
+$p-mobile: 1em;
+
+html{
+    width: $full-width;
+}
+
+body{
+    height: auto;
+    width: $full-width;
+    font-family: $font-stack;
+    color: $primary-color;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: $bold;
+}
+
+.componentsHeader{
+    margin: 0;
+}
+
+h2{
+    font-size:2.5em;
+    font-weight: $bold;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: $regular;
+}
+
+
+
+p{
+    font-size: 1.1em;
+    font-weight: $regular;
+    line-height: 1.4em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.005em;
+}
+
+a{
+    font-weight: $regular;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: $primary-color;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    width: 5em;
+}
+
+.anchor-comp-pg{
+    display: block;
+}
+
+button{
+    font-weight: $regular;
+    background-color: $background-color;
+    border: solid 1px;
+    padding: 0.5em;
+    border-radius: 0.75em;
+}
+
+button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.navContainer{
+    display: flex;
+    background-color: $background-accent;
+    justify-content: space-between;
+    padding: 1em;
+    
+    @media screen and (max-width: 500px){
+        flex-direction: column;
+    }
+    
+    .logoContainer{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navMenu{
+        padding: 0;
+    
+        @media screen and (max-width: 500px){
+            justify-content: flex-end;
+            margin: auto;
+            flex: 0;
+            padding-top: 1em;
+        }
+        
+        a{
+            font-size: 1.1em;
+        }
+}
+    
+
+    
+}
+
+.navItem{
+    display: inline;
+    padding: 0px 20px 0px 20px;
+    
+    @media screen and (max-width: 900px){
+        
+        padding: 0px 8px 0px 8px; 
+        
+        a{
+            font-size:1em;
+        }
+    }
+}
+
+.textOffset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    height: 40em;
+    width: auto;
+    margin: 0 auto;
+    
+    h1{
+        width: 100%;
+        padding-top: 15%;
+        margin: auto;
+        display: flex;
+        z-index: 1;
+    }
+    
+    img{
+        height: 50%;
+        width: auto;
+        position: absolute;
+        margin: 0 auto;
+        right: 10%;
+        
+    }
+    
+    @media screen and (max-width:600px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; 
+        width: auto;
+        height: auto;
+        
+        h1{
+            font-size: $h1-mobile;
+            margin: 0;
+            text-align: center;
+        }
+        
+        img{
+            width: 100%;
+            position: static;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2.5em;
+            right:auto;
+        }
+    }
+    
+    
+}
+
+img{
+    width: 100%;
+    height: auto;
+    
+    @media screen and (min-width:1920){
+        width: auto;
+    }
+}
+
+.centerBanner-twoColumn__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+}
+    
+.centerBanner{
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 50%;
+    
+    position: absolute;
+    left: 12.5%;
+    top: -25%;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 20px;
+        
+    h1{
+        text-align: center;
+        align-self: center;
+        margin: 0;
+    }
+    
+    p{
+        align-self: center;
+        width: 80%;
+        margin: 1em;
+    }
+    
+    button{
+        width: auto;
+        align-self: center;
+    }
+    
+    @media screen and (max-width: 1400px){
+        
+        h1{
+            margin-bottom: 0.5em;
+        }
+        
+        p{
+            margin: 0;
+            margin-bottom: 1em;
+            font-size:$p-mobile;
+        }
+        
+        
+    }
+    
+    @media screen and (max-width: 600px){
+        
+        h1{
+            font-size: $h1-mobile;
+            margin-bottom: 0.5em;
+        }
+        
+        p{
+            width: auto;
+        }
+    }
+}
+
+.twoColumn{    
+    display: flex;
+    padding: 5em 5em 5em 5em;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    @media screen and (max-width:1230px){
+        padding: 2em;
+        flex-direction: column;
+    }
+    
+    .leftColumn{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        
+        h2{
+        margin: 0;
+        margin-bottom: 1em;
+        }
+        
+        @media screen and (max-width: 1230px){
+            width: auto;
+            
+            h2{
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+    
+    .rightColumn{
+        align-self: center;
+        width: 40%;
+        height: auto;
+        
+        h2{
+            margin: 0;
+            margin-bottom: 1em;
+        }
+        
+        img{
+            width: 100%;
+            height: auto;
+        }
+        
+        @media screen and (max-width: 1230px){
+            width: 100%;
+            height: auto;
+            padding: 0;
+        }
+                    
+    }
+}
+
+.twoColumn--top{
+    padding-top: 15%;
+}
+
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    background-color: $background-accent;
+    height: auto;
+    margin: 0;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+}
+
+.cardWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:flex-start;
+    flex-wrap: wrap;
+    width: auto;
+    margin: auto;
+    gap: 4em;
+    padding-bottom: 12.5em;
+    height: auto;
+        @media screen and (max-width:1685px){
+            width: 70%;
+        }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    border-radius: 2.5%;
+    padding: 1em;   
+    flex-basis: 15%;
+    min-width: 20em;
+    min-height: 20em; 
+         @media screen and (max-width:1685px){
+            flex-basis: 30%;
+        }
+    
+}
+
+.card__bottom{
+    margin-top: auto;
+}
+
+.footer__container{
+    background-color: lightgray;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding: 1em;
+    
+    .logoContainer{
+        display: flex;
+        justify-content: flex;
+        flex:15%;
+        margin: auto;
+    }
+    
+    .logo{
+
+    }
+    
+    .copyright{
+        margin: auto;
+        flex: 70%;
+        text-align: center;
+    }
+    
+    .footer__menu{
+        list-style: none;
+        padding: 0;
+        flex:15%;
+        
+        li{
+            margin: 0;
+            display: inline-block;
+            padding-right: 20px;
+            font-size: 0.75em; 
+        }
+        
+    }
+    
+    @media screen and (max-width: 600px){
+        flex-direction: column;
+        
+        .logoContainer{
+            margin-top:0.5em; 
+            margin-bottom:0.5em; 
+        }
+        
+        .logo{
+            margin-top: 0.5em; 
+            margin-bottom: 0.5em; 
+        }
+        
+        .copyright{
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        .footer__menu{
+            text-align: center;
+            
+            li{
+            padding: 0 5px 0 5px;
+            }
+        }
+    }
+    
+.embed-container{ 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; 
+    
+    iframe{
+        width: 100%;
+        height: auto;
+    }
+} 
+
+    
+}
