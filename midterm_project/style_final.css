@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  background-color: lightgray;
   height: auto;
   width: 100%;
   font-family: Inter, sans-serif;
@@ -14,7 +15,8 @@ body {
 
 h1 {
   font-size: 3em;
-  font-weight: 600;
+  font-weight: 500;
+  color: #112cff;
 }
 
 .componentsHeader {
@@ -23,24 +25,27 @@ h1 {
 
 h2 {
   font-size: 2.5em;
-  font-weight: 600;
+  font-weight: 500;
+  word-spacing: 0.001em;
+  color: #112cff;
 }
 
 h3 {
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 500;
+  color: #112cff;
 }
 
 p {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 500;
   line-height: 1.4em;
   letter-spacing: 0.05em;
-  word-spacing: 0.005em;
+  color: #112cff;
 }
 
 a {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5em;
   text-decoration: none;
   color: #1f1f1f;
@@ -59,21 +64,26 @@ a:hover {
 }
 
 button {
-  font-weight: 400;
-  background-color: white;
-  border: solid 1px;
+  font-weight: 500;
+  color: #112cff;
+  background-color: lightgray;
+  border: solid 1px #112cff;
   padding: 0.5em;
   border-radius: 1em;
+  transition: ease 0.5s;
 }
 
 button:hover {
-  background-color: lightgray;
+  background-color: #112cff;
+  color: lightgray;
   cursor: pointer;
+  transform: scale(1.15);
+  transform: translateY(-0.5em);
 }
 
 .navContainer {
   display: flex;
-  background-color: #c4f28f;
+  background-color: #112cff;
   justify-content: space-between;
   padding: 1em;
 }
@@ -99,6 +109,7 @@ button:hover {
 }
 .navContainer .navMenu a {
   font-size: 1.1em;
+  color: lightgray;
 }
 
 .navItem {
@@ -189,16 +200,17 @@ img {
 }
 
 .centerBanner {
-  background-color: white;
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   width: 75%;
   margin: 0;
-  border: 1px solid black;
+  border: 2px solid #112cff;
   border-radius: 1em;
   padding: 20px;
+  box-shadow: 10px 10px #112cff;
 }
 .centerBanner h1 {
   text-align: center;
@@ -292,7 +304,7 @@ img {
   flex-direction: column;
   align-content: flex-start;
   justify-content: center;
-  background-color: #c4f28f;
+  background-color: #112cff;
   height: auto;
   margin: 0;
 }
@@ -302,6 +314,9 @@ img {
   justify-content: center;
   align-items: center;
   height: 15em;
+}
+.cardHeader h2 {
+  color: lightgray;
 }
 @media screen and (max-width: 600px) {
   .cardHeader {
@@ -340,7 +355,7 @@ img {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: lightgray;
   border-radius: 2.5%;
   padding: 1em;
   flex-basis: 15%;
@@ -358,7 +373,7 @@ img {
 }
 
 .footer__container {
-  background-color: #c4f28f;
+  background-color: #112cff;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

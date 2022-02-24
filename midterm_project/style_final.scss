@@ -1,9 +1,9 @@
 $font-stack: Inter, sans-serif;
 $primary-color: #1f1f1f;
-$background-color:white;
-$background-accent:#c4f28f;
+$background-color:lightgray;
+$background-accent:#112cff;
 $bold:600;
-$regular:400;
+$regular:500;
 $light:300;
 $full-width:100%;
 
@@ -17,6 +17,7 @@ html{
 }
 
 body{
+    background-color: lightgray; 
     height: auto;
     width: $full-width;
     font-family: $font-stack;
@@ -27,7 +28,8 @@ body{
 
 h1{
     font-size: 3em;
-    font-weight: $bold;
+    font-weight: $regular;
+    color: $background-accent;
 }
 
 .componentsHeader{
@@ -36,22 +38,26 @@ h1{
 
 h2{
     font-size:2.5em;
-    font-weight: $bold;
+    font-weight: $regular;
+    word-spacing: 0.001em;
+    color: $background-accent;
 }
 
 h3{
     font-size: 1.5em;
     font-weight: $regular;
+    color: $background-accent;
 }
 
 
 
 p{
-    font-size: 1.1em;
+    font-size: 1.25em;
     font-weight: $regular;
     line-height: 1.4em;
     letter-spacing: 0.05em;
-    word-spacing: 0.005em;
+    color: $background-accent;
+
 }
 
 a{
@@ -75,15 +81,20 @@ a:hover{
 
 button{
     font-weight: $regular;
+    color: $background-accent;
     background-color: $background-color;
-    border: solid 1px;
+    border: solid 1px $background-accent;
     padding: 0.5em;
     border-radius: 1em;
+    transition: ease 0.5s;
 }
 
 button:hover{
-    background-color: lightgray;
+    background-color: $background-accent;
+    color: $background-color;
     cursor: pointer;
+    transform: scale(1.15);
+    transform: translateY(-0.5em);
 }
 
 .navContainer{
@@ -113,6 +124,7 @@ button:hover{
         
         a{
             font-size: 1.1em;
+            color: $background-color;
         }
 }
     
@@ -223,9 +235,10 @@ img{
     align-content: center;
     width: 75%;
     margin: 0;
-    border: 1px solid black;
+    border: 2px solid $background-accent;
     border-radius: 1em;
     padding: 20px;
+    box-shadow: 10px 10px $background-accent;
         
     h1{
         text-align: center;
@@ -350,6 +363,10 @@ img{
     align-items: center;
     height: 15em;
     
+    h2{
+        color: $background-color;
+    }
+    
     @media screen and (max-width:600px){
         height: 10em;
     }
@@ -388,7 +405,7 @@ img{
     padding: 1em;   
     flex-basis: 15%;
     min-width: 20em;
-    min-height: 20em; 
+    min-height: 20em;
          @media screen and (max-width:1685px){
             flex-basis: 30%;
         }
