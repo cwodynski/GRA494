@@ -1,6 +1,6 @@
 $font-stack: Inter, sans-serif;
 $primary-color: #1f1f1f;
-$background-color:lightgray;
+$background-color:rgb(211, 211, 211);
 $background-accent:#112cff;
 $bold:600;
 $regular:500;
@@ -28,7 +28,7 @@ body{
 
 h1{
     font-size: 3em;
-    font-weight: $regular;
+    font-weight: $bold;
     color: $background-accent;
 }
 
@@ -72,8 +72,7 @@ a:hover{
 }
 
 .logo{
-    width: 5em;
-    fill: $background-color;
+    width: 8em;
 }
 
 .anchor-comp-pg{
@@ -170,7 +169,7 @@ button:hover{
     margin: 0 auto;
     
     h1{
-        color: $background-color;
+        color: $background-accent;
         width: 100%;
         margin: auto;
         display: flex;
@@ -183,10 +182,12 @@ button:hover{
         position: absolute;
         margin: 0 auto;
         right: 10%;
+        border:solid 2px $background-accent;
+        border-radius: 1em;
         
     }
     
-    @media screen and (max-width:600px){
+    @media screen and (max-width:725px){
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -464,6 +465,7 @@ img{
         list-style: none;
         padding: 0;
         flex:15%;
+        text-align: center;
         
         li{
             margin: 0;
@@ -478,17 +480,35 @@ img{
         
     }
     
+    @media screen and (max-width: 900px){
+        .logoContainer{
+            flex: 25%;
+        }
+        
+        .copyright{
+            flex: 50%;
+        }
+        
+        .footer__menu{
+            flex: 25%;
+            
+            a{
+                line-height: 2em;
+            }
+        }
+    }
+    
     @media screen and (max-width: 600px){
         flex-direction: column;
         
         .logoContainer{
             margin-top:0.5em; 
-            margin-bottom:0.5em; 
+            margin-bottom:0.5em;
         }
         
         .logo{
             margin-top: 0.5em; 
-            margin-bottom: 0.5em; 
+            margin-bottom: 0.5em;
         }
         
         .copyright{

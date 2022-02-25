@@ -15,7 +15,7 @@ body {
 
 h1 {
   font-size: 3em;
-  font-weight: 500;
+  font-weight: 600;
   color: #112cff;
 }
 
@@ -56,8 +56,7 @@ a:hover {
 }
 
 .logo {
-  width: 5em;
-  fill: lightgray;
+  width: 8em;
 }
 
 .anchor-comp-pg {
@@ -145,7 +144,7 @@ button:hover {
   margin: 0 auto;
 }
 .textOffset h1 {
-  color: lightgray;
+  color: #112cff;
   width: 100%;
   margin: auto;
   display: flex;
@@ -157,8 +156,10 @@ button:hover {
   position: absolute;
   margin: 0 auto;
   right: 10%;
+  border: solid 2px #112cff;
+  border-radius: 1em;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 725px) {
   .textOffset {
     display: flex;
     flex-direction: column;
@@ -408,6 +409,7 @@ img {
   list-style: none;
   padding: 0;
   flex: 15%;
+  text-align: center;
 }
 .footer__container .footer__menu li {
   margin: 0;
@@ -417,6 +419,20 @@ img {
 }
 .footer__container .footer__menu li a {
   color: lightgray;
+}
+@media screen and (max-width: 900px) {
+  .footer__container .logoContainer {
+    flex: 25%;
+  }
+  .footer__container .copyright {
+    flex: 50%;
+  }
+  .footer__container .footer__menu {
+    flex: 25%;
+  }
+  .footer__container .footer__menu a {
+    line-height: 2em;
+  }
 }
 @media screen and (max-width: 600px) {
   .footer__container {
