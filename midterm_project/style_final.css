@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: lightgray;
+  background: #fcfcfc;
   height: auto;
   width: 100%;
   font-family: Inter, sans-serif;
@@ -67,7 +67,7 @@ button {
   font-weight: 500;
   font-size: 1.25em;
   color: #112cff;
-  background-color: lightgray;
+  background-color: #fcfcfc;
   border: solid 1px #112cff;
   padding: 0.5em;
   border-radius: 1em;
@@ -76,7 +76,7 @@ button {
 
 button:hover {
   background-color: #112cff;
-  color: lightgray;
+  color: #fcfcfc;
   cursor: pointer;
   transform: scale(1.15);
   transform: translateY(-0.5em);
@@ -115,7 +115,7 @@ button:hover {
 }
 .navContainer .navMenu a {
   font-size: 1.1em;
-  color: lightgray;
+  color: #fcfcfc;
 }
 
 .navItem {
@@ -187,7 +187,7 @@ img {
   width: 100%;
   height: auto;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 3200px) {
   img {
     width: auto;
   }
@@ -211,7 +211,7 @@ img {
 }
 
 .centerBanner {
-  background-color: lightgray;
+  background-color: #fcfcfc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -327,7 +327,7 @@ img {
   height: 15em;
 }
 .cardHeader h2 {
-  color: lightgray;
+  color: #fcfcfc;
 }
 @media screen and (max-width: 600px) {
   .cardHeader {
@@ -366,7 +366,7 @@ img {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: #fcfcfc;
   border-radius: 2.5%;
   padding: 1em;
   flex-basis: 15%;
@@ -392,7 +392,7 @@ img {
   padding: 1em;
 }
 .footer__container p {
-  color: lightgray;
+  color: #fcfcfc;
 }
 .footer__container .logoContainer {
   display: flex;
@@ -418,7 +418,7 @@ img {
   font-size: 0.75em;
 }
 .footer__container .footer__menu li a {
-  color: lightgray;
+  color: #fcfcfc;
 }
 @media screen and (max-width: 900px) {
   .footer__container .logoContainer {

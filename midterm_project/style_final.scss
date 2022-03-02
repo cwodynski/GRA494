@@ -1,6 +1,6 @@
 $font-stack: Inter, sans-serif;
 $primary-color: #1f1f1f;
-$background-color:rgb(211, 211, 211);
+$background-color:#fcfcfc;
 $background-accent:#112cff;
 $bold:600;
 $regular:500;
@@ -17,7 +17,7 @@ html{
 }
 
 body{
-    background-color: lightgray; 
+    background: $background-color; 
     height: auto;
     width: $full-width;
     font-family: $font-stack;
@@ -218,7 +218,7 @@ img{
     width: 100%;
     height: auto;
     
-    @media screen and (min-width:1920px){
+    @media screen and (min-width:3200px){
         width: auto;
     }
 }
