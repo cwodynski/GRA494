@@ -88,6 +88,7 @@ button:hover {
 
 button:focus {
   background-color: red;
+  color: white;
 }
 
 .navContainer {
@@ -95,9 +96,6 @@ button:focus {
   background-color: #112cff;
   justify-content: space-between;
   padding: 0.125em;
-}
-.navContainer button:hover {
-  background-color: red;
 }
 @media screen and (max-width: 500px) {
   .navContainer {
