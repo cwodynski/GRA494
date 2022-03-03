@@ -55,6 +55,10 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus {
+  background-color: red;
+}
+
 .logo {
   width: 8em;
 }
@@ -80,6 +84,10 @@ button:hover {
   cursor: pointer;
   transform: scale(1.15);
   transform: translateY(-0.5em);
+}
+
+button:focus {
+  background-color: red;
 }
 
 .navContainer {
@@ -397,18 +405,18 @@ img {
 .footer__container .logoContainer {
   display: flex;
   justify-content: flex;
-  flex: 15%;
+  flex: 20%;
   margin: auto;
 }
 .footer__container .copyright {
   margin: auto;
-  flex: 70%;
+  flex: 60%;
   text-align: center;
 }
 .footer__container .footer__menu {
   list-style: none;
   padding: 0;
-  flex: 15%;
+  flex: 20%;
   text-align: center;
 }
 .footer__container .footer__menu li {
