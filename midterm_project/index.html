@@ -16,6 +16,8 @@
     </head>
     
     <body>
+       
+    <!--Navigation component-->
         <div class="navContainer">
             <div class="logoContainer">
                 <img src="img/logo-02.svg" class="logo" alt="A wordmark logo that says website.">
@@ -24,15 +26,38 @@
                 <li class="navItem"><a href="#">Websites</a></li>
                 <li class="navItem"><a href="#">Dot Coms</a></li>
                 <li class="navItem"><a href="#">Pages</a></li>
-                <li class="navItem"><button>Internet</button></li>
+                <li class="navItem"><button>Internet</button></li><!--This shouldn't have an animation on it-->
             </ul>
         </div>
+    <!--Navigation component-->
 
+    <!--Image with offset--><!--This is depdent on using flex and setting the text above the image on the z-index-->
         <div class="textOffset">
             <h1>The number one website to be a website, talk about websites and look like a website.</h1>
-            <img src="img/Website.png" alt="A simple illustration of a web page.">
+            <img src="img/Website.png" alt="A simple illustration of a web page."><!--This has an absolute positioning-->
         </div>
+    <!--Image with offset-->
         
+        
+    <!--Bababooie
+
+        <button onclick="myFunction()">Click Me</button>
+
+        <div id="myDIV">Bababooie</div>
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myDIV");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+        </script>
+    -->
+       
+    <!--Banner Image-->
         <div class="image-banner__wrapper">
             <img src="img/placeholder-2.png" alt="A bitmapped image of a tree in the desert.">
         
@@ -51,61 +76,66 @@
             </div>
         
         </div>
+    <!--Banner Image-->
+        
+    <!--Two Column Layout-->
+        <div class="twoColumn twoColumn--top">
+            <div class="leftColumn">
+                <h2>How to be a website</h2>
+                <p>Being a website is easy! At an atomic level, your person should be constructed of Hypertext Markup language and Cascading Style Sheets. If you're feeling fancy, you could also be made of some Javascript. More advanced people can become websites that use PHP if they need dynamic content. </p>
+            </div>
+            <div class="rightColumn">
+                <img src="img/placeholder-2.png"> 
+            </div>
+        </div>
+    <!--Two Column Layout-->
 
-            <div class="twoColumn twoColumn--top">
-                <div class="leftColumn">
-                    <h2>How to be a website</h2>
-                    <p>Being a website is easy! At an atomic level, your person should be constructed of Hypertext Markup language and Cascading Style Sheets. If you're feeling fancy, you could also be made of some Javascript. More advanced people can become websites that use PHP if they need dynamic content. </p>
-                </div>
-                <div class="rightColumn">
-                    <img src="img/placeholder-2.png"> 
-                </div>
+    <!--Card Ogranism-->
+        <div class="cardSection"><!--I leaned pretty heavily on media queries for this-->
+
+            <div class="cardHeader">
+                <h2>Different Websites</h2>
             </div>
 
+                <div class="cardContainer">
 
-        <div class="cardSection"><!--Card Ogranism-->
+                        <div class="card">
+                            <h3>WebSite</h3>
+                            <div class="card__bottom">
+                                <p>Lorem ipsums dolor sit amet, sonsectetuer adispiscing poopy.</p>
+                                <button>Lorem ipsum</button>
+                            </div>
+                        </div>
 
-                <div class="cardHeader">
-                    <h2>Different Websites</h2>
+                        <div class="card">
+                            <h3>SiteWeb</h3>
+                            <div class="card__bottom">
+                                <p>Lorem ipsums dolor sit amet, sonsectetuer adispiscing poopy.</p>
+                                <button>Lorem ipsum</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3>Web's Site</h3>
+                            <div class="card__bottom">
+                                <p>Lorem ipsums dolor sit amet, sonsectetuer adispiscing poopy.</p>
+                                <button>Lorem ipsum</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3>Web Sited</h3>
+                            <div class="card__bottom">
+                                <p>Lorem ipsums dolor sit amet, sonsectetuer adispiscing poopy.</p>
+                                <button>Lorem ipsum</button>
+                            </div>
+                        </div>
+
                 </div>
-
-                    <div class="cardContainer">
-
-                            <div class="card">
-                                <h3>WebSite</h3>
-                                <div class="card__bottom">
-                                    <p>Lorem ipsums dolor sit amet, sonsectetuer adispiscing poopy.</p>
-                                    <button>Lorem ipsum</button>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <h3>SiteWeb</h3>
-                                <div class="card__bottom">
-                                    <p>Lorem ipsums dolor sit amet, sonsectetuer adispiscing poopy.</p>
-                                    <button>Lorem ipsum</button>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <h3>Web's Site</h3>
-                                <div class="card__bottom">
-                                    <p>Lorem ipsums dolor sit amet, sonsectetuer adispiscing poopy.</p>
-                                    <button>Lorem ipsum</button>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <h3>Web Sited</h3>
-                                <div class="card__bottom">
-                                    <p>Lorem ipsums dolor sit amet, sonsectetuer adispiscing poopy.</p>
-                                    <button>Lorem ipsum</button>
-                                </div>
-                            </div>
-
-                    </div>
-            </div><!--Card Ogranism-->
-
+                
+        </div>
+    <!--Card Ogranism-->
+       
         <div class="twoColumn">
             <div class="leftColumn">
                 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/G5kzUpWAusI' frameborder='0' allowfullscreen></iframe></div>
@@ -116,7 +146,10 @@
             </div>
         </div>
         
-        <div class="footer"><!--Footer-->
+    <!--Card Organism-->
+        
+    <!--Footer-->
+        <div class="footer">
             <div class="footer__container">
                 <div class="logoContainer">
                     <img src="img/logo-02.svg" class="logo">
@@ -128,6 +161,7 @@
                 </ul>
             </div>
         </div>
+    <!--Footer-->
     
     </body>
     </html>
