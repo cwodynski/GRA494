@@ -10,37 +10,73 @@
 <meta name="description" content="A simple HTML5 Template for new projects.">
 <meta name="author" content="SitePoint">  
 
-<meta property="og:title" content="A Basic HTML5 Template">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-<meta property="og:description" content="A simple HTML5 Template for new projects.">
-<meta property="og:image" content="image.png">
-
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link href="./css/style.css" type="text/css" rel="stylesheet">
-<link href="./css/reset.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="./scss/reset.css" type="text/css" rel="stylesheet">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 
 </head>
 <body>
    <header>
      <!--Navigation bar/Header-->
-     <nav>
-       <div class="navbar">
-         <div class="navbar_logo">
+         <nav>
            
-          <img id="logo" src="img/tiger-10-10.png" alt="logo">
-         </div>
+            <div class="navbar">
+                <div class="navbar_logo">
+                     <img id="logo" src="img/tiger-10-10.png" alt="logo">
+                </div>
 
-         <div class="navbar_link">
-          <li><a href="https://www.google.com/">Gamer</a></li>
-          <li><a href="https://www.google.com/">Gamer</a></li>
-          <li><a href="https://www.google.com/">Gamer</a></li>
-          <li><a class="navbar_button" href="https://www.google.com/">Gamer</a></li>
-        </div>
-        </div>
-     </nav>
+                <div class="navbar_link">
+                  <li><a href="https://www.google.com/">Home</a></li>
+                  <li><a href="https://www.google.com/">About</a></li>
+                  <li><a href="https://www.google.com/">Stream</a></li>
+                  <li><a class="navbar_button" href="https://www.google.com/">Sponsors</a></li>
+                </div>
+                
+                <div class="navbar_link--mobile">
+                    <ul class="menu">
+                        <li><a class="menuItem" href="https://www.google.com/"></a>Home</li>
+                        <li><a class="menuItem" href="https://www.google.com/"></a>About</li>
+                        <li><a class="menuItem" href="https://www.google.com/"></a>Stream</li>
+                        <li><a class="menuItem" href="https://www.google.com/"></a>Sponsors</li>
+                    </ul>
+                    <button class="hamburger">
+                        <i class="menuIcon material-icons">menu</i>
+                        <i class="closeIcon material-icons">close</i>
+                    </button>
+                    
+                    <script>
+                        const menu = document.querySelector(".menu");
+                        const menuItems = document.querySelectorAll(".menuItem");
+                        const hamburger= document.querySelector(".hamburger");
+                        const closeIcon= document.querySelector(".closeIcon");
+                        const menuIcon = document.querySelector(".menuIcon");
+
+                        function toggleMenu() {
+                          if (menu.classList.contains("showMenu")) {
+                            menu.classList.remove("showMenu");
+                            closeIcon.style.display = "none";
+                            menuIcon.style.display = "block";
+                          } else {
+                            menu.classList.add("showMenu");
+                            closeIcon.style.display = "block";
+                            menuIcon.style.display = "none";
+                          }
+                        }
+
+                        hamburger.addEventListener("click", toggleMenu);
+                    </script>
+                    
+                </div>
+            </div>
+            
+         
+         </nav>
     </header>
 
     <!--Block1 Text over image-->
@@ -55,19 +91,37 @@
   <!--Block2 Image with container over it-->
 
     <section class="block2">
-      <div class="block2_img">
-      </div>
-      <div class="block2_container">
-        <div class="block2_sub">
-          <h2>Gamer</h2>
+    
+        <div class="block2_gradient"></div>
+        <div class="block2_img">
+            <img src="img/gamer.jpg" id="myPicture" alt="Hands on mouse and keyboard">
         </div>
-        <div class="block2_sub_copy">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt, quia accusantium vitae adipisci officia totam enim error dignissimos delectus facilis in incidunt aperiam id iste magni est libero odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse saepe sed suscipit labore dolorum ratione ad facilis voluptate nobis mollitia reprehenderit eos velit aut, repellat qui voluptates vel veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam necessitatibus soluta repellat quisquam quo inventore provident doloremque, dolores fuga reprehenderit, commodi voluptate minus nostrum aliquid voluptas adipisci harum explicabo.</p>
-        </div>
-        <a href="https://www.google.com/"><button class="block2_button">Lorem</button></a>
-        
-        </div>        
+            
+                <div class="block2_container">
+
+                <div class="block2_sub">
+                    <h2>Gamer</h2>
+                </div>
+
+             <div class="block2_sub_copy">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt, quia accusantium vitae adipisci officia totam enim error dignissimos delectus facilis in incidunt aperiam id iste magni est libero odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse saepe sed suscipit labore dolorum ratione ad facilis voluptate nobis mollitia reprehenderit eos velit aut, repellat qui voluptates vel veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam necessitatibus soluta repellat quisquam quo inventore provident doloremque, dolores fuga reprehenderit, commodi voluptate minus nostrum aliquid voluptas adipisci harum explicabo.</p>
+            </div>
+
+            <a href=#contact><button class="block2_button">Lorem</button></a>
+
+            </div>        
      
+     <script>
+        window.onload = choosePic;
+        
+        var myPix = new Array("img/gamer.jpg", "img/gamer2.jpg", "img/gamer3.jpg")
+        
+        function choosePic(){
+            var randomNum = Math.floor(Math.random() * myPix.length);
+            document.getElementById("myPicture").src = myPix[randomNum];
+        }
+        
+     </script>
        
     </section>
 
@@ -134,19 +188,210 @@
     </div>
   </section>
 
-  <!--Block5 Video-->
+<!---Icon Cards-->
+<div class="icon-cards">
+    <div class="icon-cards_header">
+        <h1>Be epic, join the epic gamer community.</h1>
+    </div>
+    <div class="icon-cards__list">
+        <ul>
+            <div class="icon-cards__list__row">
+                <li>
+                    <img src="img/brick-game%201.png" alt="">
+                    <div class="icon-cards_list_copy">
+                        <h2>Exclusive gamer apps</h2>
+                        <p></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/dart%201.png" alt="">
+                    <div class="icon-cards_list_copy">
+                        <h2>Know where all your favorite gamers are</h2>
+                        <p></p>
+                    </div>
+                </li>
+            </div>
+            <div class="icon-cards__list__row">
+                <li>
+                    <img src="img/headphone.png" alt="">
+                    <div class="icon-cards_list_copy">
+                        <h2>Listen to your favorite gamers sleep</h2>
+                        <p></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/star.png" alt="">
+                    <div class="icon-cards_list_copy">
+                        <h2>Know your favorite gamers astrological signs</h2>
+                        <p></p>
+                    </div>
+                </li>
+            </div>
+            <div class="icon-cards__list__row">
+                <li>
+                    <img src="img/toad.png" alt="">
+                    <div class="icon-cards_list_copy">
+                        <h2>Watch your favorite gamers eat</h2>
+                        <p></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/trophy.png" alt="">
+                    <div class="icon-cards_list_copy">
+                        <h2>Always win every game you play</h2>
+                        <p></p>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<!--Block5 Video-->
 
 <section class="block5">
-  <div class="block5_container">
-    <div class="block5_container_iframe">
-      <iframe src="https://www.youtube.com/embed/kcIifH_iTZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+    <div class="block5_video-container">
+            
+        <video src="img/epic.mp4" class="block5_video"  playsinline muted></video>
+        
     </div>
-   </div>
-  </div>
-  <div class="block5_text">
-    <h2>Gamer</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque enim quidem numquam fuga ab accusamus commodi harum, accusantium perspiciatis cum consectetur labore ipsa voluptatum iure consequatur culpa libero assumenda aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis quo temporibus dicta sint ullam enim id repellendus! Perferendis cumque doloribus repudiandae doloremque tempora beatae ad consectetur earum nisi sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid veniam dolorem assumenda ratione quasi consectetur. Ipsum mollitia soluta eveniet possimus quia suscipit ratione rerum ad placeat omnis amet, maxime exercitationem!</p>
-  </div>
+    
+
+    <div class="block5_text">
+       
+        <h2>Gamer</h2>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque enim quidem numquam fuga ab accusamus commodi harum, accusantium perspiciatis cum consectetur labore ipsa voluptatum iure consequatur culpa libero assumenda aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis quo temporibus dicta sint ullam enim id repellendus! Perferendis cumque doloribus repudiandae doloremque tempora beatae ad consectetur earum nisi sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid veniam dolorem assumenda ratione quasi consectetur. Ipsum mollitia soluta eveniet possimus quia suscipit ratione rerum ad placeat omnis amet, maxime exercitationem!</p>
+        
+    </div>
+    
+    <div class="block5_popup-video">
+       <span>&times;</span>
+        <video src="img/epic.mp4" class="block5_video" muted controls></video>
+    </div>
+  
+</section>
+
+<section class="block5">
+ 
+    <div class="block5_video-container">
+            
+        <video src="img/epic.mp4" class="block5_video"  playsinline muted></video>
+        
+    </div>
+    
+
+    <div class="block5_text">
+       
+        <h2>Gamer</h2>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque enim quidem numquam fuga ab accusamus commodi harum, accusantium perspiciatis cum consectetur labore ipsa voluptatum iure consequatur culpa libero assumenda aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis quo temporibus dicta sint ullam enim id repellendus! Perferendis cumque doloribus repudiandae doloremque tempora beatae ad consectetur earum nisi sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid veniam dolorem assumenda ratione quasi consectetur. Ipsum mollitia soluta eveniet possimus quia suscipit ratione rerum ad placeat omnis amet, maxime exercitationem!</p>
+        
+    </div>
+    
+    <div class="block5_popup-video">
+       <span>&times;</span>
+        <video src="img/epic.mp4" class="block5_video" muted controls></video>
+    </div>
+  
+</section>
+
+<section class="block5">
+ 
+    <div class="block5_video-container">
+            
+        <video src="img/epic.mp4" class="block5_video"  playsinline muted></video>
+        
+    </div>
+    
+
+    <div class="block5_text">
+       
+        <h2>Gamer</h2>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque enim quidem numquam fuga ab accusamus commodi harum, accusantium perspiciatis cum consectetur labore ipsa voluptatum iure consequatur culpa libero assumenda aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis quo temporibus dicta sint ullam enim id repellendus! Perferendis cumque doloribus repudiandae doloremque tempora beatae ad consectetur earum nisi sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid veniam dolorem assumenda ratione quasi consectetur. Ipsum mollitia soluta eveniet possimus quia suscipit ratione rerum ad placeat omnis amet, maxime exercitationem!</p>
+        
+    </div>
+    
+    <div class="block5_popup-video">
+       <span>&times;</span>
+        <video src="img/epic.mp4" class="block5_video" muted controls></video>
+    </div>
+  
+</section>
+
+<script>
+document.querySelectorAll('.block5_video-container video').forEach(vid => {
+    vid.onclick = () =>{
+        document.querySelector('.block5_popup-video').style.display  = 'block';
+        var muteit = document.querySelector("video");
+        
+        muteit.setAttribute("muted", "true")
+    }
+});
+
+document.querySelector('.block5_popup-video span').onclick = () =>{
+    const popvid = document.querySelector('.block5_popup-video');
+    
+    function pauseVid(){
+        popvid.pause();
+        popvid.currentTime = 0;
+    }
+    
+    pauseVid();
+    popvid.style.display  = 'none';
+    
+}
+</script>
+
+<section class="block6">
+    <div id="contact" class="contact-form">
+      
+       <div class="contact-form_copy">
+        <h2>Contact Us</h2>
+        <p>If you're a fan of the stream and want to give us feeback please fill out the contact form.</p>
+      </div>
+      
+      <div class="contact-form_entries-wrapper">
+        
+        <div class="contact-form_entries">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+            <label for="subject">Subject</label>
+            
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            
+            <a id="submit" href="#" >Submit</a>
+              
+          </form>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="contact-modal">
+        <div class="contact-modal__frame">
+            <h3 class="exit">&times;</h3>
+            <h3>Thank you, Gamer. Your submission has been sent.</h3>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('submit').addEventListener('click', function(){
+           document.querySelector('.contact-modal').style.display = 'flex'; 
+        });
+        
+        document.querySelector('.exit').addEventListener('click', function(){
+            document.querySelector('.contact-modal').style.display = 'none';
+        })
+    </script>
+    
 </section>
 
 <!--Footer-->
@@ -169,6 +414,6 @@
 
 
 
-  <script src="js/scripts.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>
